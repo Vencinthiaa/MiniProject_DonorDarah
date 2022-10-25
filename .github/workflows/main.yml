@@ -1,0 +1,40 @@
+on:
+  pull_request:
+   branches:
+   - main
+   - master
+  push:
+   branches:
+   - main
+   - master
+   - develop
+name: "Build & Release"
+jobs:
+   build:
+    name: Build & Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v1
+      - uses: action/setup-java@v1
+        with:
+          java-version: '12.x'
+      - uses: subosito/flutter-action@v1
+        with:
+          flutter-version: '3.3.4'
+      - run: flutter pub get
+      - run: flutter test
+      - run: flutter build apk --debug --split-per-abi
+      - name: Push to Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifact: "build/app/outputs/apk/debug/*"
+          tag: v1.0.${{ github.run.number }}
+          token: ${{ secrets.TOKEN }}
+
+
+
+
+
+
+# push to master, main, develop
+# push request on main master
