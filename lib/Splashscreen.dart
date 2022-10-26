@@ -22,13 +22,6 @@ class _SplashscreenState extends State<Splashscreen> {
     return Column(
       children: [
         Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(40),
-              bottomRight: Radius.circular(40),
-            ),
-          ),
           height: 300,
           width: double.infinity,
           child: Padding(
