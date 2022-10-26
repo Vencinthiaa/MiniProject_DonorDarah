@@ -33,8 +33,6 @@ class _BookingState extends State<Booking> {
             ),
             child: Image.asset(
               'assets/donasi.png',
-              width: 80,
-              height: 50,
             ),
           ),
         ),
