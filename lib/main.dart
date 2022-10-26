@@ -11,13 +11,13 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     routes: {
-      '/splash': (context) => Splash(),
+      '/': (context) => Splash(),
       '/login': (context) => Login(),
       '/booking': (context) => Booking(),
       '/survey': (context) => Survey(),
       '/splashscreen': (context) => Splashscreen(),
       '/register': (context) => Register(),
-      '/lokasi': (context) => Lokasi(),
+      '/lokasi' : (context) => Lokasi(),
     },
   ));
 }
