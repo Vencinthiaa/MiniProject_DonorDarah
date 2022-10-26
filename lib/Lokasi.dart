@@ -51,7 +51,7 @@ class _LokasiState extends State<Lokasi> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.of(context).pushNamed("/login");
+                    Navigator.of(context).pushNamed("/splash");
                   },
                   child: Text(
                     "Back to Home",
