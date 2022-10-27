@@ -36,8 +36,6 @@ class _LoginState extends State<Login> {
               padding: const EdgeInsets.only(top: 10.0),
               child: Image.asset(
                 "assets/donasi.png",
-                width: 200.0,
-                height: 200.0,
               ),
             ),
           ),
