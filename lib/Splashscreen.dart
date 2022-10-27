@@ -40,7 +40,7 @@ class _SplashscreenState extends State<Splashscreen> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
           child: Align(
-            alignment: Alignment.topRight,
+            alignment: Alignment.topCenter,
           ),
         ),
         GestureDetector(
